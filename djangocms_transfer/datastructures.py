@@ -2,7 +2,7 @@ from collections import namedtuple
 
 from django.core.serializers import deserialize
 from django.db import transaction
-from django.utils.encoding import force_text
+from django.utils.encoding import force_str
 from django.utils.functional import cached_property
 
 from cms.models import CMSPlugin
