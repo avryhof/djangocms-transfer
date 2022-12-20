@@ -30,7 +30,7 @@ class ArchivedPlugin(BaseArchivedPlugin):
     @cached_property
     def deserialized_instance(self):
         data = {
-            'model': force_text(self.model._meta),
+            'model': force_str(self.model._meta),
             'fields': self.data,
         }
 
